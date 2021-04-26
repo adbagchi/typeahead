@@ -1,0 +1,81 @@
+.App {
+  text-align: center;
+}
+
+.type-ahead-view {
+  border-radius: 10px;
+  height: 600px;
+  width: 500px;
+  background: #f9eeee9c;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%)
+}
+
+.type-ahead-view input[type="text"] {
+  font-size: 14px;
+  border-radius: 5px;
+  width: 300px;
+  padding: 5px;
+  border: 1px solid rgb(91, 83, 83);
+}
+
+.type-ahead-view input[type="text"]:focus {
+  outline: none;
+}
+
+.suggestion {
+  text-align: left;
+  margin: 20px 20px 30px 20px;
+  font-size: 12px;
+  color: rgb(169, 165, 165);
+  padding-left: 5px;
+}
+
+.suggestion .row {
+  padding-top: 5px;
+}
+
+.suggestion .row .diff {
+  font-weight: 500;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 16px;
+}
+
+.suggestion .row em {
+  font-style: normal;
+  background-color: yellow;
+}
+
+.suggestion .row .title {
+  font-size: 13px;
+  color: #000;
+  padding-left: 0px;
+}
+
+.search-result {
+  height: 480px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.loader {
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #3498db;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 2s linear infinite;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
