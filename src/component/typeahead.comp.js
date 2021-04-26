@@ -73,8 +73,7 @@ class TypeAheadView extends Component {
             searchText,
             searchResult,
         } = this.state;
-console.clear();
-console.log(searchResult);
+
         return (
             <div className="type-ahead-view">
                 <h3>Search Hacker News</h3>
